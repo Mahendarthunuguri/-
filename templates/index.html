@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zenwire AI | WhatsApp AI for Indian Businesses</title>
+  <meta name="description" content="Custom WhatsApp AI assistants for gyms, salons, coaching centers, restaurants, clinics, and local businesses. Instant customer replies 24/7." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}" />
+  <script>
+    window.ZENWIRE_CONFIG = {
+      razorpayKeyId: "{{ razorpay_key_id }}",
+      whatsappNumber: "{{ whatsapp_number }}"
+    };
+  </script>
+</head>
+<body>
+  <div class="progress" id="progress"></div>
+
+  <header class="site-header" id="siteHeader">
+    <a href="#top" class="brand" aria-label="Zenwire AI home">
+      <span class="brand-mark">Z</span>
+      <span>Zenwire<span>AI</span></span>
+    </a>
+    <nav class="nav-links" aria-label="Primary navigation">
+      <a href="#features">Features</a>
+      <a href="#industries">Solutions</a>
+      <a href="#how">How it works</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="header-cta" href="#contact">Book free demo</a>
+    <button class="menu-button" id="menuButton" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+  </header>
+
+  <nav class="mobile-nav" id="mobileNav" aria-label="Mobile navigation">
+    <a href="#features">Features</a>
+    <a href="#industries">Solutions</a>
+    <a href="#how">How it works</a>
+    <a href="#pricing">Pricing</a>
+    <a href="#contact">Contact</a>
+    <a href="#contact">Book demo</a>
+  </nav>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-copy reveal">
+        <p class="availability">Built in Bengaluru for local businesses</p>
+        <h1>Custom WhatsApp AI for your business</h1>
+        <p class="hero-subtitle">
+          Your 24/7 AI assistant replies instantly, qualifies leads, takes inquiries, and makes your business look premium on WhatsApp.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#contact">Book a free demo</a>
+          <a class="btn btn-secondary" href="#voice-demo">Hear the AI welcome</a>
+        </div>
+        <div class="proof-row" aria-label="Key proof points">
+          <span>24/7 instant replies</span>
+          <span>More bookings</span>
+          <span>Lower missed leads</span>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal" aria-label="WhatsApp AI assistant preview">
+        <div class="phone-shell" id="phoneShell">
+          <div class="phone-top">
+            <div class="avatar">G</div>
+            <div>
+              <strong>HSR Fit Studio</strong>
+              <span>AI assistant online</span>
+            </div>
+            <div class="phone-status"></div>
+          </div>
+          <div class="chat-window" id="chatWindow"></div>
+          <div class="phone-input">
+            <span>Ask about timings, fees, trial...</span>
+            <button aria-label="Send demo message">Send</button>
+          </div>
+        </div>
+        <div class="signal-card signal-one">
+          <strong>2 sec</strong>
+          <span>average reply</span>
+        </div>
+        <div class="signal-card signal-two">
+          <strong>24/7</strong>
+          <span>lead capture</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="voice-demo reveal" id="voice-demo" aria-label="Zenwire AI voice welcome">
+      <div class="assistant-card">
+        <div class="bot-face" aria-hidden="true">
+          <span></span>
+          <span></span>
+        </div>
+        <div>
+          <p class="section-label">AI welcome video</p>
+          <h2>Welcome to Zenwire AI</h2>
+          <p>We make your business grow on WhatsApp with instant replies, smarter lead capture, and a premium customer experience.</p>
+        </div>
+        <div class="voice-controls">
+          <div class="waveform" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+          <button class="btn btn-primary" id="speakWelcome" type="button">Play welcome voice</button>
+          <p>Click to hear the assistant. Browser audio needs one tap to start.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section features" id="features">
+      <div class="section-heading reveal">
+        <p>Top notch features</p>
+        <h2>Everything a local business needs to look fast, premium, and always available.</h2>
+      </div>
+      <div class="feature-grid">
+        <article class="feature-card reveal">
+          <h3>Smart FAQ brain</h3>
+          <p>Answers from your timings, pricing, offers, services, location, and policies.</p>
+        </article>
+        <article class="feature-card reveal">
+          <h3>Lead capture</h3>
+          <p>Collects name, phone, preferred slot, branch, and inquiry type before handoff.</p>
+        </article>
+        <article class="feature-card reveal">
+          <h3>Human handoff</h3>
+          <p>When the AI is unsure, it sends the customer to your team instead of guessing.</p>
+        </article>
+        <article class="feature-card reveal">
+          <h3>Monthly updates</h3>
+          <p>Change prices, offers, timings, and FAQs as your business changes.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="ticker" aria-label="Business types">
+      <div>
+        <span>Gyms</span><span>Salons</span><span>Coaching centers</span><span>Restaurants</span><span>Clinics</span><span>Cafes</span>
+        <span>Gyms</span><span>Salons</span><span>Coaching centers</span><span>Restaurants</span><span>Clinics</span><span>Cafes</span>
+      </div>
+    </section>
+
+    <section class="section industries" id="industries">
+      <div class="section-heading reveal">
+        <p>Who pays</p>
+        <h2>Built for businesses that lose leads when WhatsApp is silent.</h2>
+      </div>
+      <div class="industry-grid">
+        <article class="industry-card reveal">
+          <span>01</span>
+          <h3>Gyms and studios</h3>
+          <p>Membership plans, trial slots, trainer details, timings, and location replies.</p>
+        </article>
+        <article class="industry-card reveal">
+          <span>02</span>
+          <h3>Salons and spas</h3>
+          <p>Service menus, price ranges, booking questions, packages, and availability.</p>
+        </article>
+        <article class="industry-card reveal">
+          <span>03</span>
+          <h3>Coaching classes</h3>
+          <p>Batch timings, fees, subjects, demo classes, syllabus, and admission leads.</p>
+        </article>
+        <article class="industry-card reveal">
+          <span>04</span>
+          <h3>Restaurants and cafes</h3>
+          <p>Menu questions, opening hours, table inquiries, delivery links, and events.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section split-section">
+      <div class="reveal">
+        <p class="section-label">The pitch</p>
+        <h2>Meta AI answers general questions. Zenwire answers your business questions.</h2>
+      </div>
+      <div class="comparison reveal">
+        <div>
+          <span>B2C idea</span>
+          <p>General users, low willingness to pay, big platform competition.</p>
+        </div>
+        <div>
+          <span>B2B pivot</span>
+          <p>Local owners pay monthly because every instant reply can become revenue.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section process" id="how">
+      <div class="section-heading reveal">
+        <p>How it works</p>
+        <h2>One demo, one business sheet, one assistant that feels custom.</h2>
+      </div>
+      <div class="steps">
+        <article class="step reveal">
+          <span>1</span>
+          <h3>Collect business info</h3>
+          <p>Timings, pricing, services, location, FAQs, handoff contact, and preferred language.</p>
+        </article>
+        <article class="step reveal">
+          <span>2</span>
+          <h3>Train the prompt</h3>
+          <p>The assistant only answers from that business data and escalates when unsure.</p>
+        </article>
+        <article class="step reveal">
+          <span>3</span>
+          <h3>Connect WhatsApp</h3>
+          <p>Official WhatsApp API flow sends customer messages to AI and returns polished replies.</p>
+        </article>
+        <article class="step reveal">
+          <span>4</span>
+          <h3>Improve monthly</h3>
+          <p>Update pricing, offers, FAQs, and lead flow as the business changes.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section pricing" id="pricing">
+      <div class="section-heading reveal">
+        <p>Pricing</p>
+        <h2>Simple monthly plans for local businesses.</h2>
+      </div>
+      <div class="pricing-grid">
+        <article class="price-card reveal">
+          <h3>Starter</h3>
+          <p class="price">Rs. 999<span>/mo</span></p>
+          <p>For a simple FAQ bot and early trials.</p>
+          <ul>
+            <li>Basic business prompt</li>
+            <li>Up to 300 replies/month</li>
+            <li>English replies</li>
+          </ul>
+          <button class="pay-button secondary" data-plan="starter">Pay with Razorpay</button>
+        </article>
+        <article class="price-card featured reveal">
+          <div class="popular">Most chosen</div>
+          <h3>Professional</h3>
+          <p class="price">Rs. 1,500<span>/mo</span></p>
+          <p>Best for gyms, salons, coaching centers, cafes, and clinics.</p>
+          <ul>
+            <li>Custom AI trained on your business</li>
+            <li>Unlimited replies fair-use</li>
+            <li>Hindi + English</li>
+            <li>Lead capture and handoff</li>
+            <li>Live in 48 hours</li>
+          </ul>
+          <button class="pay-button primary" data-plan="professional">Pay securely</button>
+        </article>
+        <article class="price-card reveal">
+          <h3>Growth</h3>
+          <p class="price">Rs. 3,500<span>/mo</span></p>
+          <p>For chains, high-volume businesses, and custom workflows.</p>
+          <ul>
+            <li>Multiple branches</li>
+            <li>Lead tracking report</li>
+            <li>Priority updates</li>
+          </ul>
+          <button class="pay-button secondary" data-plan="growth">Start Growth</button>
+        </article>
+      </div>
+      <div class="payment-methods reveal">
+        <div>
+          <strong>Secure payments. Multiple options.</strong>
+          <span>Razorpay checkout with UPI, cards, net banking, wallets, EMI-ready flows, and manual invoice support.</span>
+        </div>
+        <div class="payment-logos" aria-label="Accepted payment methods">
+          <span>Razorpay</span><span>UPI</span><span>Visa</span><span>Mastercard</span><span>NetBanking</span><span>Wallets</span>
+        </div>
+      </div>
+      <p class="payment-note reveal">Payments open through Razorpay when keys are configured. Otherwise, buttons route to WhatsApp inquiry.</p>
+    </section>
+
+    <section class="section testimonials">
+      <div class="section-heading reveal">
+        <p>Business owner proof</p>
+        <h2>Designed to feel like a premium front desk on WhatsApp.</h2>
+      </div>
+      <div class="testimonial-grid">
+        <article class="testimonial-card reveal">
+          <strong>5/5</strong>
+          <p>"The bot handles membership questions before my team even opens the gym."</p>
+          <span>Gym owner, HSR Layout</span>
+        </article>
+        <article class="testimonial-card reveal">
+          <strong>5/5</strong>
+          <p>"Customers get prices and booking details instantly. It feels very professional."</p>
+          <span>Salon owner, Koramangala</span>
+        </article>
+        <article class="testimonial-card reveal">
+          <strong>5/5</strong>
+          <p>"We stopped missing admission inquiries after class hours."</p>
+          <span>Coaching center, Bengaluru</span>
+        </article>
+      </div>
+    </section>
+
+    <section class="section faq" id="faq">
+      <div class="section-heading reveal">
+        <p>FAQ</p>
+        <h2>Questions owners ask before paying.</h2>
+      </div>
+      <div class="faq-list reveal">
+        <button class="faq-item" aria-expanded="false">
+          <span>Will this work with my current WhatsApp number?</span>
+          <p>Yes, the setup is designed around the official WhatsApp Business API flow. We confirm number eligibility during onboarding.</p>
+        </button>
+        <button class="faq-item" aria-expanded="false">
+          <span>What if the assistant does not know an answer?</span>
+          <p>It politely hands off to your phone number instead of inventing information.</p>
+        </button>
+        <button class="faq-item" aria-expanded="false">
+          <span>Can I update prices later?</span>
+          <p>Yes. Send the update and the bot knowledge can be refreshed as part of the monthly service.</p>
+        </button>
+        <button class="faq-item" aria-expanded="false">
+          <span>Do my customers need to install anything?</span>
+          <p>No. They message your business on WhatsApp like they already do.</p>
+        </button>
+        <button class="faq-item" aria-expanded="false">
+          <span>Which payment methods do you support?</span>
+          <p>Razorpay can support UPI, cards, net banking, wallets, and Indian checkout flows. For larger clients, manual invoices can also be used.</p>
+        </button>
+      </div>
+    </section>
+
+    <section class="section contact" id="contact">
+      <div class="section-heading reveal">
+        <p>Contact</p>
+        <h2>Tell us your business. We will show you the demo flow.</h2>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info reveal">
+          <a id="whatsappDemoTop" href="#" target="_blank" rel="noreferrer">Chat on WhatsApp</a>
+          <a href="mailto:hello@zenwireai.com">hello@zenwireai.com</a>
+          <span>HSR Layout, Bengaluru, India</span>
+          <span>Mon - Sat, 9:00 AM - 8:00 PM</span>
+          <p>Typically replies in a few minutes during business hours.</p>
+        </div>
+        <form class="contact-form reveal" id="contactForm">
+          <input name="name" placeholder="Your name" required />
+          <input name="business" placeholder="Business name" required />
+          <input name="phone" placeholder="WhatsApp number" required />
+          <select name="type" required>
+            <option value="">Business type</option>
+            <option>Gym / fitness</option>
+            <option>Salon / spa</option>
+            <option>Coaching center</option>
+            <option>Restaurant / cafe</option>
+            <option>Clinic / dietitian</option>
+          </select>
+          <textarea name="message" placeholder="What should your bot answer for customers?" rows="4"></textarea>
+          <button class="btn btn-primary" type="submit">Send demo request</button>
+        </form>
+      </div>
+    </section>
+
+    <section class="final-cta reveal">
+      <h2>Stop losing customers to slow replies.</h2>
+      <p>Launch a custom WhatsApp AI assistant for your business and reply instantly, even after closing time.</p>
+      <a class="btn btn-primary" id="whatsappFinal" href="#" target="_blank" rel="noreferrer">Talk on WhatsApp</a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <div>
+        <a href="#top" class="brand">
+          <span class="brand-mark">Z</span>
+          <span>Zenwire<span>AI</span></span>
+        </a>
+        <p>We build WhatsApp AI assistants that help local businesses automate conversations, capture more leads, and grow revenue.</p>
+      </div>
+      <div>
+        <h3>Company</h3>
+        <a href="#features">Features</a>
+        <a href="#industries">Solutions</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div>
+        <h3>Legal</h3>
+        <a href="/privacy-policy">Privacy Policy</a>
+        <a href="/terms">Terms of Service</a>
+        <a href="/refund-policy">Refund Policy</a>
+        <a href="/data-processing">Data Processing</a>
+      </div>
+      <div>
+        <h3>We accept</h3>
+        <div class="footer-payments">
+          <span>Razorpay</span><span>UPI</span><span>Visa</span><span>Mastercard</span><span>NetBanking</span>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 Zenwire AI. All rights reserved.</span>
+      <span>Made in Bengaluru for Indian businesses.</span>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+  <script src="{{ url_for('static', filename='app.js') }}"></script>
+</body>
+</html>

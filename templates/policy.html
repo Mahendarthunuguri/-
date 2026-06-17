@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{{ page }} | Zenwire AI</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}" />
+</head>
+<body>
+  <main class="policy-page">
+    <a href="/" class="brand policy-brand">
+      <span class="brand-mark">Z</span>
+      <span>Zenwire<span>AI</span></span>
+    </a>
+    <section class="policy-shell">
+      <p class="availability">Legal</p>
+      <h1>{{ page }}</h1>
+      <p>Last updated: June 17, 2026</p>
+      <div class="policy-copy">
+        <h2>Overview</h2>
+        <p>This page is a starter legal template for Zenwire AI. Replace it with lawyer-reviewed terms before accepting production payments or handling customer data at scale.</p>
+        <h2>Service</h2>
+        <p>Zenwire AI builds and manages WhatsApp AI assistants for businesses. The service may include onboarding, prompt configuration, WhatsApp API setup, lead routing, and monthly updates.</p>
+        <h2>Customer Data</h2>
+        <p>Business information and customer messages should be used only to provide and improve the assistant for that business. Sensitive data should not be shared unless required for the service.</p>
+        <h2>Payments</h2>
+        <p>Payments may be collected through Razorpay, UPI, cards, net banking, wallets, or invoices. Subscription access can be paused if payment fails or is cancelled.</p>
+        <h2>Contact</h2>
+        <p>For questions, email hello@zenwireai.com or message the business WhatsApp number listed on the website.</p>
+      </div>
+      <a class="btn btn-primary" href="/">Back to home</a>
+    </section>
+  </main>
+</body>
+</html>
